@@ -1,0 +1,4 @@
+HistoricalStockRepository
+=========================
+
+HistoricalStockRepository
