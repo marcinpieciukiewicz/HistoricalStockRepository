@@ -15,6 +15,7 @@ class YahooDataDownloader:
         self._exchangeName = exchangeName
 
     def downloadStocks(self, startDate, endDate):
+        print "Started to download historical data for " + self._exchangeName 
         stockNameList = self._readStockList()
         logging.info("Loaded " + str(len(stockNameList)) + " stocks from file.")
         self._downloadHistoricalPrizesForStocks(stockNameList, startDate, endDate)
